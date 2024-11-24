@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Check out the source code
         uses: actions/checkout@v3
+      - name: Set up working directory
+        working-directory: app_code  
 
       - name: List files in the repository
         run: ls -la  # This will show the contents of the directory
